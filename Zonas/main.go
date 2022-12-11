@@ -28,29 +28,12 @@ func main() {
 
 func CreateFile(filename, text string) {
 
-	// fmt package implements formatted I/O and
-	// contains inbuilt methods like Printf
-	// and Scanf
-	fmt.Printf("Writing to a file in Go lang\n")
-
-	// Creating the file using Create() method
-	// with user inputted filename and err
-	// variable catches any error thrown
 	file, err := os.Create(filename)
 
 	if err != nil {
 		log.Fatalf("failed creating file: %s", err)
 	}
-
-	// closing the running file after the main
-	// method has completed execution and
-	// the writing to the file is complete
 	defer file.Close()
-
-	// writing data to the file using
-	// WriteString() method and the
-	// length of the string is stored
-	// in len variable
 	len, err := file.WriteString(text)
 	if err != nil {
 		log.Fatalf("failed writing to file: %s", err)
