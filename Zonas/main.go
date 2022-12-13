@@ -19,7 +19,7 @@ func main() {
 		log.Println(err.Error())
 	}
 	resto := string(content)
-	k1 := strings.Replace(string(resto), " DISTRITO PROVINCIA CANTON PARROQUIA UNICODIGO ESTABLECIMIENTO TIPOLOGIA NÚMERO DE PLAZAS CARRERA Nro.", " ", -1)
+	k1 := strings.Replace(string(resto), " DISTRITO PROVINCIA CANTON PARROQUIA UNI", " ", -1)
 	k2 := strings.Replace(k1, "\r\n", " ", -1)
 	k3 := strings.Replace(k2, "ZONA", "\r\n ZONA", -1)
 	CreateFile("filename", k3)
