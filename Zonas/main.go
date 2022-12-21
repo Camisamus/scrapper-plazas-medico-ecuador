@@ -25,6 +25,7 @@ func main() {
 	CreateFile("filename", k3)
 	log.Println("everything is content")
 	log.Println("everything is content")
+	log.Println("dont forget to film it")
 
 }
 
