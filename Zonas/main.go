@@ -24,6 +24,7 @@ func main() {
 	k3 := strings.Replace(k2, "ZONA", "\r\n ZONA", -1)
 	CreateFile("filename", k3)
 	log.Println("everything is content")
+	log.Println("everything is content")
 
 }
 
