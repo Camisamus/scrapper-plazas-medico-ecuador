@@ -8,7 +8,6 @@ import (
 	"strings"
 
 	_ "github.com/go-sql-driver/mysql"
-
 )
 
 var param []string
@@ -24,7 +23,7 @@ func main() {
 	k2 := strings.Replace(k1, "\r\n", " ", -1)
 	k3 := strings.Replace(k2, "ZONA", "\r\n ZONA", -1)
 	CreateFile("filename", k3)
-	log.Println("")
+	log.Println("everything is content")
 
 }
 
