@@ -27,6 +27,7 @@ func main() {
 	log.Println("everything is content")
 	log.Println("dont forget to film it")
 	log.Println("dont forget to film it")
+	log.Println("everything is content")
 
 }
 
